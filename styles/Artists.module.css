@@ -1,0 +1,49 @@
+.artscroll {
+    position: relative;
+  height: 25vh;
+  width: calc(100vw - 50px);
+  /* box-sizing: border-box; */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background: linear-gradient(30deg, #000000e8, var(--darker));
+  overflow-x: scroll;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.artscroll > div {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: baseline;
+  min-width: 130px;
+  max-width: 150px;
+  overflow: hidden;
+  height: 100%;
+  background: linear-gradient(30deg, red, brown);
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  box-shadow: 0.8px 0.4px 9.4px rgba(255, 255, 255, 0.059),
+    3.5px 1.7px 12.3px rgba(255, 255, 255, 0.085);
+}
+
+.artscroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+.artFrame{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.artFrame>p{
+   margin-top: auto;
+    font-size: 1.2rem;
+    font-weight: bold ;
+    color: white;
+    
+}

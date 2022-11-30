@@ -1,0 +1,70 @@
+/* Layout */
+
+
+
+.side, .side2{
+
+    padding: 20px 10px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    
+    min-height: 100vh;
+    transition:all .5s ease-in;
+}
+.side>button, .side2>button{
+    all: unset;
+    padding: 20px 10px;
+    font-size: 1.2rem;
+    color: var(--brighter);
+
+}
+.side{
+    min-width: 250px ;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.side2{
+    width: 50px;
+    background-color: var(--primary);
+}
+.side>ul>li, .side2>ul>li{
+    list-style-type: none;
+    color: var(--brighter);
+    padding: 10px ;
+    margin-bottom: 5px ;
+    font-size: 1.2em;
+    transition: color .5s ease-in;
+    cursor: pointer;
+}
+.side>ul>li:hover, .side2>ul>li:hover{
+    color: rgba(220, 220, 220, 0.685);
+}
+
+.side2>ul>li>span{
+    display: none;
+    transition: .5 ease-in-out;
+}
+
+
+.body{
+    position: relative;
+    display: flex;
+    background: linear-gradient(45deg,black,transparent, black), url("../resources/bck.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap: 10px;
+
+    box-sizing: border-box;
+}
+.disabled{
+    color: gray;
+}
